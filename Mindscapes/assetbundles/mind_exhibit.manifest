@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 3364279537
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 84aa325a74ce6e80935f47b2bd0f6170
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 91a829646f90b84f6f3580b27494c09c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: f913c288c393f80a7e923fc1c775f4fb, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/props/mind_exhibit.prefab
+Dependencies: []
