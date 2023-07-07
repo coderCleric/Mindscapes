@@ -1,0 +1,45 @@
+{
+  "name": "Riebeck",
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "starSystem": "RiebeckSystem",
+  "Base": {
+    "groundSize": 0,
+    "surfaceSize": 500,
+    "surfaceGravity": 0,
+    "hasMapMarker": false,
+    "centerOfSolarSystem": true,
+    "showMinimap": false
+  },
+  "Orbit": {
+    "staticPosition": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "isStatic": true
+  },
+  "Props": {
+    "details": [
+      {
+        "keepLoaded": true,
+        "assetBundle": "assetbundles/riebeck_area",
+        "path": "Assets/Prefabs/mindscapes/riebeck_area.prefab"
+      }
+    ]
+  },
+  "Spawn": {
+    "playerSpawn": {
+      "position": {
+        "x": -32.91,
+        "y": 30.57,
+        "z": 5.07
+      },
+      "rotation": {
+        "x": 0,
+        "y": 90,
+        "z": 0
+      },
+      "startWithSuit": false
+    }
+  }
+}

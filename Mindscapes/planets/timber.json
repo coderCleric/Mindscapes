@@ -4,9 +4,9 @@
   "Props": {
     "details": [
       {
-        "keepLoaded": false,
+        "keepLoaded": true,
         "assetBundle": "assetbundles/mind_exhibit",
-        "path": "Assets/Prefabs/props/mind_exhibit.prefab",
+        "path": "Assets/Prefabs/mindscapes/mind_exhibit.prefab",
         "position": {
           "x": -52.47049,
           "y": 14.33391,
@@ -16,6 +16,18 @@
           "x": 274.1236,
           "y": 166.2373,
           "z": 0.0001
+        }
+      }
+    ],
+    "singularities": [
+      {
+        "horizonRadius": 1,
+        "targetStarSystem": "RiebeckSystem",
+        "type": "blackHole",
+        "position": {
+          "x": 29.99329,
+          "y": -47.46227,
+          "z": 184.0056
         }
       }
     ]

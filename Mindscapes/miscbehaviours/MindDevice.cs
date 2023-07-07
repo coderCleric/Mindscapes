@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Mindscapes.miscbehaviours
 {
-    internal class MindDevice : OWItem
+    public class MindDevice : OWItem
     {
         /**
          * Gives the display name
@@ -23,6 +23,7 @@ namespace Mindscapes.miscbehaviours
         public override void PickUpItem(Transform holdTranform)
         {
             base.PickUpItem(holdTranform);
+            InvadeTrigger.ActivateTriggers();
         }
 
         /**
@@ -31,6 +32,7 @@ namespace Mindscapes.miscbehaviours
         public override void DropItem(Vector3 position, Vector3 normal, Transform parent, Sector sector, IItemDropTarget customDropTarget)
         {
             base.DropItem(position, normal, parent, sector, customDropTarget);
+            InvadeTrigger.DeactivateTriggers();
         }
     }
 }

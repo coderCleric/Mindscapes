@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3364279537
+CRC: 2189445014
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 84aa325a74ce6e80935f47b2bd0f6170
+    Hash: d9b59d779d98a6d2d046d7883a492d71
   TypeTreeHash:
     serializedVersion: 2
     Hash: 91a829646f90b84f6f3580b27494c09c
@@ -37,5 +37,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Prefabs/props/mind_exhibit.prefab
+- Assets/Prefabs/mindscapes/mind_exhibit.prefab
 Dependencies: []
