@@ -53,7 +53,7 @@ namespace Mindscapes
                 InvadeTrigger.ResetTriggerList(); //Need to clear any previous loop
                 foreach(CharacterDialogueTree i in Component.FindObjectsOfType<CharacterDialogueTree>())
                 {
-                    if (i.name.Contains("RSci") || i.name.Contains("Gabbro") || i.name.Contains("Chert") || i.name.Contains("Esker") || i.name.Contains("Feldspar")) 
+                    if (i.name.Contains("RSci") || i.name.Contains("Gabbro") || i.name.Contains("Esker") || i.name.Contains("Feldspar")) 
                     {
                         i.gameObject.AddComponent<InvadeTrigger>();
                     }
@@ -62,18 +62,34 @@ namespace Mindscapes
                         InvadeTrigger tmp = i.gameObject.AddComponent<InvadeTrigger>();
                         tmp.systemName = "RiebeckSystem";
                     }
+                    else if (i.name.Contains("Chert"))
+                    {
+                        InvadeTrigger tmp = i.gameObject.AddComponent<InvadeTrigger>();
+                        tmp.systemName = "ChertSystem";
+                    }
                 }
             }
 
             //Only do this in Riebeck's mind
             else if(s.Equals("RiebeckSystem"))
             {
+                //Need to make the platforms actually show up
                 Transform platRoot = newHorizons.GetPlanet("Riebeck").transform.Find("Sector/riebeck_area/platforms");
                 samplePlatform = platRoot.GetComponentInChildren<DetachableFragment>().gameObject;
                 prepPlatFix = true;
             }
+
+            //Only do this in Chert's mind
+            else if(s.Equals("ChertSystem"))
+            {
+                //Need to attach the controller to the fake sun
+                newHorizons.GetPlanet("Chert").transform.Find("Sector/chert_area/fakesun").gameObject.AddComponent<FakeSunController>();
+            }
         }
 
+        /**
+         * Riebeck's platforms are a real pain
+         */
         private void Update()
         {
             if(prepPlatFix && !samplePlatform.activeSelf)

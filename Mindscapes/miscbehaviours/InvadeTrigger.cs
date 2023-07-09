@@ -43,6 +43,14 @@ namespace Mindscapes.miscbehaviours
         }
 
         /**
+         * Unlink the trigger if we're destroyed
+         */
+        private void OnDestroy()
+        {
+            interactVolume.OnPressInteract -= OnPressInteract;
+        }
+
+        /**
          * Needs to be called on system load
          */
         public static void ResetTriggerList()

@@ -1,0 +1,57 @@
+{
+  "name": "Chert",
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "starSystem": "ChertSystem",
+  "Base": {
+    "groundSize": 0,
+    "surfaceSize": 500,
+    "surfaceGravity": 0,
+    "hasMapMarker": false,
+    "centerOfSolarSystem": true,
+    "showMinimap": false
+  },
+  "Orbit": {
+    "staticPosition": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "isStatic": true
+  },
+  "Props": {
+    "details": [
+      {
+        "keepLoaded": true,
+        "assetBundle": "assetbundles/chert_area",
+        "path": "Assets/Prefabs/mindscapes/chert_area.prefab"
+      },
+      {
+        "keepLoaded": true,
+        "path": "Sun_Body/Sector_SUN/Geometry_SUN/Surface",
+        "parentPath": "Sector/chert_area/fakesun",
+        "scale": 0.25,
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ]
+  },
+  "Spawn": {
+    "playerSpawn": {
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "startWithSuit": true
+    }
+  }
+}
