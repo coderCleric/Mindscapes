@@ -36,6 +36,9 @@ namespace Mindscapes
 
             //Make all of the patches
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
+
+            //Set up funni Gabbro stuff
+            GlobalMessenger.AddListener("WakeUp", SetZeroGMovement);
         }
 
         /**
@@ -53,7 +56,7 @@ namespace Mindscapes
                 InvadeTrigger.ResetTriggerList(); //Need to clear any previous loop
                 foreach(CharacterDialogueTree i in Component.FindObjectsOfType<CharacterDialogueTree>())
                 {
-                    if (i.name.Contains("RSci") || i.name.Contains("Gabbro") || i.name.Contains("Esker") || i.name.Contains("Feldspar")) 
+                    if (i.name.Contains("RSci") || i.name.Contains("Esker") || i.name.Contains("Feldspar")) 
                     {
                         i.gameObject.AddComponent<InvadeTrigger>();
                     }
@@ -66,6 +69,11 @@ namespace Mindscapes
                     {
                         InvadeTrigger tmp = i.gameObject.AddComponent<InvadeTrigger>();
                         tmp.systemName = "ChertSystem";
+                    }
+                    else if (i.name.Contains("Gabbro"))
+                    {
+                        InvadeTrigger tmp = i.gameObject.AddComponent<InvadeTrigger>();
+                        tmp.systemName = "GabbroSystem";
                     }
                 }
             }
@@ -88,18 +96,31 @@ namespace Mindscapes
         }
 
         /**
-         * Riebeck's platforms are a real pain
+         * Make the player able to move when waking in Gabbro's mind
+         */
+        private void SetZeroGMovement()
+        {
+            //Thanks Hawkbar & Xen!
+            if (newHorizons.GetCurrentStarSystem().Equals("GabbroSystem")) {
+                ModHelper.Events.Unity.FireOnNextUpdate(() =>
+                {
+                    Locator.GetPlayerController().EnableZeroGMovement();
+                });
+            }
+        }
+
+        /**
+         * Some things need to happen weird
          */
         private void Update()
         {
+            //Do a super specific fix for Riebeck's platforms
             if(prepPlatFix && !samplePlatform.activeSelf)
             {
-                DebugPrint("fixing");
                 prepPlatFix = false;
                 Transform platRoot = newHorizons.GetPlanet("Riebeck").transform.Find("Sector/riebeck_area/platforms");
                 foreach(DetachableFragment plat in platRoot.GetComponentsInChildren<DetachableFragment>(true)) 
                 {
-                    DebugPrint("fixing internal");
                     plat.gameObject.SetActive(true);
                 }
             }

@@ -1,0 +1,40 @@
+{
+  "name": "Gabbro",
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "starSystem": "GabbroSystem",
+  "Base": {
+    "groundSize": 0,
+    "surfaceSize": 500,
+    "surfaceGravity": 0,
+    "hasMapMarker": false,
+    "centerOfSolarSystem": true,
+    "showMinimap": false
+  },
+  "Orbit": {
+    "staticPosition": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "isStatic": true
+  },
+  "Props": {
+    "details": [
+      {
+        "keepLoaded": true,
+        "assetBundle": "assetbundles/gabbro_area",
+        "path": "Assets/Prefabs/mindscapes/gabbro_area.prefab"
+      }
+    ]
+  },
+  "Spawn": {
+    "playerSpawn": {
+      "position": {
+        "x": -1.17,
+        "y": 2.64,
+        "z": 0.56
+      },
+      "startWithSuit": false
+    }
+  }
+}
