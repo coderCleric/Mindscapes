@@ -1,0 +1,47 @@
+{
+  "name": "Esker",
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "starSystem": "EskerSystem",
+  "Base": {
+    "groundSize": 0,
+    "surfaceSize": 500,
+    "surfaceGravity": 0,
+    "hasMapMarker": false,
+    "centerOfSolarSystem": true,
+    "showMinimap": false
+  },
+  "Orbit": {
+    "staticPosition": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "isStatic": true
+  },
+  "Props": {
+    "details": [
+      {
+        "keepLoaded": true,
+        "assetBundle": "assetbundles/esker_area",
+        "path": "Assets/Prefabs/mindscapes/esker_area.prefab"
+      }
+    ]
+  },
+  "Spawn": {
+    "playerSpawn": {
+      "startWithSuit": false,
+      "position": {
+        "x": 0,
+        "y": 25,
+        "z": 0
+      }
+    },
+    "shipSpawn": {
+      "position": {
+        "x": 0,
+        "y": 27,
+        "z": 10
+      }
+    }
+  }
+}

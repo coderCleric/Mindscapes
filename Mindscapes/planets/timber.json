@@ -22,7 +22,7 @@
     "singularities": [
       {
         "horizonRadius": 1,
-        "targetStarSystem": "GabbroSystem",
+        "targetStarSystem": "EskerSystem",
         "type": "blackHole",
         "position": {
           "x": 29.99329,

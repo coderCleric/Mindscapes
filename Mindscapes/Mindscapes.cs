@@ -38,7 +38,7 @@ namespace Mindscapes
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
 
             //Set up funni Gabbro stuff
-            GlobalMessenger.AddListener("WakeUp", SetZeroGMovement);
+            GlobalMessenger.AddListener("WakeUp", OnceAwake);
         }
 
         /**
@@ -56,7 +56,7 @@ namespace Mindscapes
                 InvadeTrigger.ResetTriggerList(); //Need to clear any previous loop
                 foreach(CharacterDialogueTree i in Component.FindObjectsOfType<CharacterDialogueTree>())
                 {
-                    if (i.name.Contains("RSci") || i.name.Contains("Esker") || i.name.Contains("Feldspar")) 
+                    if (i.name.Contains("RSci")) 
                     {
                         i.gameObject.AddComponent<InvadeTrigger>();
                     }
@@ -74,6 +74,16 @@ namespace Mindscapes
                     {
                         InvadeTrigger tmp = i.gameObject.AddComponent<InvadeTrigger>();
                         tmp.systemName = "GabbroSystem";
+                    }
+                    else if (i.name.Contains("Feldspar"))
+                    {
+                        InvadeTrigger tmp = i.gameObject.AddComponent<InvadeTrigger>();
+                        tmp.systemName = "FeldsparSystem";
+                    }
+                    else if (i.name.Contains("Esker"))
+                    {
+                        InvadeTrigger tmp = i.gameObject.AddComponent<InvadeTrigger>();
+                        tmp.systemName = "EskerSystem";
                     }
                 }
             }
@@ -93,18 +103,61 @@ namespace Mindscapes
                 //Need to attach the controller to the fake sun
                 newHorizons.GetPlanet("Chert").transform.Find("Sector/chert_area/fakesun").gameObject.AddComponent<FakeSunController>();
             }
+
+            //Only do this in Feldspar's mind
+            else if (s.Equals("FeldsparSystem"))
+            {
+                //Need to make all of the goals
+                Goal.HardReset();
+                Transform goalRoot = newHorizons.GetPlanet("Feldspar").transform.Find("Sector/feldspar_area/goals");
+                foreach(Transform goal in goalRoot)
+                {
+                    goal.gameObject.AddComponent<Goal>();
+                }
+            }
+
+            //Only do this in Esker's mind
+            else if (s.Equals("EskerSystem"))
+            {
+
+                //Damage every external component of the ship
+
+                //Damage the whole hull of the ship
+            }
         }
 
         /**
          * Make the player able to move when waking in Gabbro's mind
          */
-        private void SetZeroGMovement()
+        private void OnceAwake()
         {
             //Thanks Hawkbar & Xen!
+            //Makes it so that the player can actually move in Gabbro's tunnel
             if (newHorizons.GetCurrentStarSystem().Equals("GabbroSystem")) {
                 ModHelper.Events.Unity.FireOnNextUpdate(() =>
                 {
                     Locator.GetPlayerController().EnableZeroGMovement();
+                });
+            }
+
+            //Damages the ship when entering Esker's mind
+            if (newHorizons.GetCurrentStarSystem().Equals("EskerSystem"))
+            {
+                ModHelper.Events.Unity.FireOnNextUpdate(() =>
+                {
+                    ShipDamageController damageController = Locator.GetShipBody().gameObject.GetComponent<ShipDamageController>();
+                    DebugPrint("test1");
+                    foreach (ShipComponent comp in damageController._shipComponents)
+                    {
+                        if (!comp.isInternalRepairPoint)
+                        {
+                            comp.SetDamaged(true);
+                        }
+                    }
+                    foreach (ShipHull hull in damageController._shipHulls)
+                    {
+                        hull.ApplyDebugImpact();
+                    }
                 });
             }
         }
