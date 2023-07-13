@@ -42,16 +42,34 @@
           "z": 0
         }
       }
+    ],
+    "dialogue": [
+      {
+        "parentPath": "Sector/chert_area/pillar/chert_area/Traveller_HEA_Chert_ANIM_Chatter_Chipper",
+        "isRelativeToParent": true,
+        "radius": 0.4,
+        "xmlFile": "text/chert.xml",
+        "position": {
+          "x": 0,
+          "y": 0.7091,
+          "z": -0.457
+        }
+      }
     ]
   },
   "Spawn": {
     "playerSpawn": {
       "position": {
+        "x": 8.8733,
+        "y": 0.2793,
+        "z": -2.5135
+      },
+      "rotation": {
         "x": 0,
-        "y": 0,
+        "y": 312.3881,
         "z": 0
       },
-      "startWithSuit": true
+      "startWithSuit": false
     }
   }
 }

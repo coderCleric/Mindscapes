@@ -1,0 +1,75 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Chert</NameField>
+
+  <!--This is all just the initial dialogue-->
+  <DialogueNode>
+    <Name>INITIAL1</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Oh, it's you! I can't say I expected to see you in here, not that I don't appreciate the company.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Can I ask you a question?</Text>
+        <DialogueTarget>INITIAL2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INITIAL2</Name>
+    <Dialogue>
+      <Page> Not now, sorry. I'm studying that star over there, I don't know why but... I have this feeling that something horrible is going to happen to it if I fail to figure out how to stop it.</Page>
+      <Page>I just wish that it was closer, all of the stars are so far away that it's a constant struggle to gather any data that actually tells me anything.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <!--After star retrieval-->
+  <DialogueNode>
+    <Name>FINISHED1</Name>
+    <EntryCondition>STAR_RETRIEVED</EntryCondition>
+    <Dialogue>
+      <Page>Oh, wow! You actually brought it! This is going to make it so much easier to take readings from it!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Can I ask that question now?</Text>
+        <DialogueTarget>FINISHED2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>FINISHED2</Name>
+    <Dialogue>
+      <Page>Oh, right, go ahead!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>What's Slate's favorite memory?</Text>
+        <DialogueTarget>FINISHED3</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>FINISHED3</Name>
+    <Dialogue>
+      <Page>Slate's favorite memory? Well, I'm not totally- Oh, what an interesting sunspot! A bit larger than normal, I wonder why that is...</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Ahem...</Text>
+        <DialogueTarget>FINISHED4</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>FINISHED4</Name>
+    <Dialogue>
+      <Page>Right, apologies. I'm honestly not totally sure, Slate always seemed the most at home around others though, so any sort of large gathering would probably be a good candidate.</Page>
+    </Dialogue>
+    <SetPersistentCondition>CHERT_REMEMBERED</SetPersistentCondition>
+  </DialogueNode>
+</DialogueTree>

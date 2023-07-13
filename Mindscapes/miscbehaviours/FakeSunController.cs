@@ -36,6 +36,15 @@ namespace Mindscapes.miscbehaviours
         }
 
         /**
+         * When it's picked up, update Chert's dialogue
+         */
+        public override void PickUpItem(Transform holdTranform)
+        {
+            base.PickUpItem(holdTranform);
+            DialogueConditionManager.SharedInstance.SetConditionState("STAR_RETRIEVED", true);
+        }
+
+        /**
          * When hit by the scout, start falling
          */
         private void OnHit(GameObject other)
