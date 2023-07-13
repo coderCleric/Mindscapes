@@ -119,10 +119,6 @@ namespace Mindscapes
             //Only do this in Esker's mind
             else if (s.Equals("EskerSystem"))
             {
-
-                //Damage every external component of the ship
-
-                //Damage the whole hull of the ship
             }
         }
 
@@ -140,13 +136,13 @@ namespace Mindscapes
                 });
             }
 
-            //Damages the ship when entering Esker's mind
+            //Messes with the ship when entering Esker's mind
             if (newHorizons.GetCurrentStarSystem().Equals("EskerSystem"))
             {
                 ModHelper.Events.Unity.FireOnNextUpdate(() =>
                 {
+                    //Damage the components
                     ShipDamageController damageController = Locator.GetShipBody().gameObject.GetComponent<ShipDamageController>();
-                    DebugPrint("test1");
                     foreach (ShipComponent comp in damageController._shipComponents)
                     {
                         if (!comp.isInternalRepairPoint)
@@ -158,7 +154,16 @@ namespace Mindscapes
                     {
                         hull.ApplyDebugImpact();
                     }
+
+                    //Shut the hatch
+                    Transform hatchRoot = Locator.GetShipBody().transform.Find("Module_Cabin/Systems_Cabin/Hatch");
+                    hatchRoot.gameObject.GetComponentInChildren<HatchController>().CloseHatch();
+                    hatchRoot.Find("TractorBeam").gameObject.SetActive(false);
                 });
+
+                //Listen for ship repairs
+                Locator.GetShipBody().GetComponent<ShipDamageController>().OnShipComponentRepaired += OnShipRepair;
+                Locator.GetShipBody().GetComponent<ShipDamageController>().OnShipHullRepaired += OnShipRepair;
             }
         }
 
@@ -176,6 +181,18 @@ namespace Mindscapes
                 {
                     plat.gameObject.SetActive(true);
                 }
+            }
+        }
+
+        /**
+         * When ship components and hull are repaired, check if we should advance Esker's dialogue
+         */
+        private void OnShipRepair(Component garb)
+        {
+            if(!Locator.GetShipBody().GetComponent<ShipDamageController>().IsDamaged())
+            {
+                DebugPrint("Ship repaired!");
+                DialogueConditionManager.SharedInstance.SetConditionState("SHIP_FIXED", true);
             }
         }
 

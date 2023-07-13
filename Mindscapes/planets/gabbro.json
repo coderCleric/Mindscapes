@@ -25,6 +25,19 @@
         "assetBundle": "assetbundles/gabbro_area",
         "path": "Assets/Prefabs/mindscapes/gabbro_area.prefab"
       }
+    ],
+    "dialogue": [
+      {
+        "parentPath": "Sector/gabbro_area/campfire/Traveller_HEA_Gabbro_ANIM_IdleFlute",
+        "isRelativeToParent": true,
+        "radius": 0.6,
+        "xmlFile": "text/gabbro.xml",
+        "position": {
+          "x": 0,
+          "y": 0.9891,
+          "z": -0.9964
+        }
+      }
     ]
   },
   "Spawn": {
@@ -34,7 +47,7 @@
         "y": 2.64,
         "z": 0.56
       },
-      "startWithSuit": false
+      "startWithSuit": true
     }
   }
 }

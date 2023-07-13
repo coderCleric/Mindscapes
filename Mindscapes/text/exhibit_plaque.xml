@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>SIGN</NameField>
+
+  <DialogueNode>
+    <Name>INITIAL</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>In this display is a Nomai device found in the <![CDATA[<color=orange>Hanging City</color>]]> of <![CDATA[<color=orange>Brittle Hollow</color>]]>.</Page>
+      <Page>It is not currently understood what this device was used for, but it is hoped that the recording, which was found next to the device, may provide some clues once translated.</Page>
+      <Page>You might also notice that the usual protective case is not present on this exhibit. This is solely to provide access to the recording. Do NOT touch the device!</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>

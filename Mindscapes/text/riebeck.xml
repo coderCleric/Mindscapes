@@ -1,0 +1,55 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Riebeck</NameField>
+
+  <DialogueNode>
+    <Name>INITIAL1</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Oh, hey Hatchling! ...Wait, what are you doing here? Sorry, I don't mean to be rude, but this is my mind so I'm not exactly... expecting... to see anybody else around.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I used a Nomai device from the museum to get in here.</Text>
+        <DialogueTarget>INITIAL2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INITIAL2</Name>
+    <Dialogue>
+      <Page>Oh, that's neat! I took a look at that when Gabbro brought it back, but wasn't able to make anything of it. I'm glad you figured out what it was for though! ...But why exactly did you use it on me?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I need to know what Slate's favorite memory is.</Text>
+        <DialogueTarget>INITIAL3</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INITIAL3</Name>
+    <Dialogue>
+      <Page>Oh! Um, I'm not totally sure, actually. I mean, I think I know what it is but... I'm not sure that's something I should tell you.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Can you give me a hint?</Text>
+        <DialogueTarget>INITIAL4</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>INITIAL4</Name>
+    <Dialogue>
+      <Page>Sure, I guess that would be okay. It's also one of my favorite memories, so I'll tell you some of what I remember.</Page>
+      <Page>I remember standing there, listening to what was being said and, well, feeling absolutely sick with worry. But I also felt... excited.</Page>
+      <Page>Don't get me wrong, it's not like I never get excited! But this time there was something... different. For the first time I felt those feelings of fear and excitement mix and... excitement won.</Page>
+      <Page>I was absolutely terrified of the idea of doing this new thing that was being brought up, but... I was even more terrified by the idea of missing out, of sitting by and letting everyone else handle it.</Page>
+      <Page>Sorry, I'm a bit emotional thinking back on it. That's probably all that I'm willing to say, I hope it helps!</Page>
+    </Dialogue>
+    <SetCondition>RIEBECK_TALKED</SetCondition>
+  </DialogueNode>
+</DialogueTree>

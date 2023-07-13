@@ -1,0 +1,44 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+
+  <!--Text that appears-->
+  <TextBlock>
+    <ID>1</ID>
+    <Text>
+      FILIX: Due to the absence of our traditional educational tools, which were lost alongside the vessel, I have begun developing a device that should allow us to still teach in-depth lessons about discoveries that have been made about our universe.
+    </Text>
+  </TextBlock>
+
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>
+      FILIX: The concept is simple, but easier said than done; allow students to access the mindscape of their teacher. This will allow the teacher to present the students with many different phenomena which are currently unreachable given our circumstances.
+    </Text>
+  </TextBlock>
+
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>FILIX: Unfortunately, development of this device is proving... challenging. It currently does not provide a way out of somebody's mind, except through death in the mindscape or through the teacher creating an exit.</Text>
+  </TextBlock>
+
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>
+      FILIX: The second solution is incredibly difficult, and would require the teacher to be very in-touch with their own mind. The first is much easier to accomplish but, according to my calculations, would result in the actual death of the student.
+    </Text>
+  </TextBlock>
+
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>
+      FILIX: As such, I would strongly discourage use of this device until further work is done.
+    </Text>
+  </TextBlock>
+
+  <!--Ship log reveals go here-->
+  <ShipLogConditions>
+  </ShipLogConditions>
+</NomaiObject>

@@ -1,0 +1,59 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Esker</NameField>
+
+  <!--This is all just the initial dialogue-->
+  <DialogueNode>
+    <Name>INITIAL1</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Oh, hey! You really are determined to keep me company, aren't ya? Finding a way into my mind and all. ...Actually, why exactly did you do that?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I was wondering if you would tell me what Slate's favorite memory is.</Text>
+        <DialogueTarget>INITIAL2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>INITIAL2</Name>
+    <Dialogue>
+      <Page>Heh, sorry, can't say that I remember terribly well, even here in my mind. Especially with this beaten-up ship sitting here, I’m having to really focus on building up the resolve to move these creaky bones and fix it up.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>What if I fix the ship for you?</Text>
+        <DialogueTarget>INITIAL3</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>INITIAL3</Name>
+    <Dialogue>
+      <Page>That would be very kind of you Hatchling! If you do that, I’ll try and see what I can remember while you work. You might have some trouble getting to the higher parts of the ship, but I'm sure you'll figure it out.</Page>
+    </Dialogue>
+    <SetCondition>ESKER_TALKED</SetCondition>
+  </DialogueNode>
+
+  <!--During repair-->
+  <DialogueNode>
+    <Name>REPAIR1</Name>
+    <EntryCondition>ESKER_TALKED</EntryCondition>
+    <Dialogue>
+      <Page>Still working on repairs I see? I’ll let you know if I've remembered anything important once you're done. Remember to get the bits on top of the ship too! You'll just need to find some way to clamber up there.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <!--After repair-->
+  <DialogueNode>
+    <Name>FINISHED1</Name>
+    <EntryCondition>SHIP_FIXED</EntryCondition>
+    <Dialogue>
+      <Page>Y'know, can't say I particularly appreciate being climbed on, but you got the job done, Hatchling! And lucky for you, that boot to the head seems to have actually knocked a memory loose!</Page>
+      <Page>Unfortunately, I still don't remember much, but I remember Slate seeming exceedingly giddy a long time ago, well before I ever ended up on the Attelrock. That's all that I can remember, but I hope that it helps!</Page>
+    </Dialogue>
+    <SetPersistentCondition>ESKER_REMEMBERED</SetPersistentCondition>
+  </DialogueNode>
+</DialogueTree>

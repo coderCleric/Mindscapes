@@ -10,6 +10,13 @@
     "centerOfSolarSystem": true,
     "showMinimap": false
   },
+  "AmbientLights": [
+    {
+      "intensity": 0.8,
+      "innerRadius": 20,
+      "outerRadius": 300
+    }
+  ],
   "Orbit": {
     "staticPosition": {
       "x": 0,
@@ -24,6 +31,19 @@
         "keepLoaded": true,
         "assetBundle": "assetbundles/riebeck_area",
         "path": "Assets/Prefabs/mindscapes/riebeck_area.prefab"
+      }
+    ],
+    "dialogue": [
+      {
+        "parentPath": "Sector/riebeck_area/end_ground/Traveller_HEA_Riebeck_ANIM_Talking",
+        "isRelativeToParent": true,
+        "radius": 1,
+        "xmlFile": "text/riebeck.xml",
+        "position": {
+          "x": 0,
+          "y": 2.1891,
+          "z": 0
+        }
       }
     ]
   },

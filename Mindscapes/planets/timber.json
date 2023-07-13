@@ -19,10 +19,38 @@
         }
       }
     ],
+    "dialogue": [
+      {
+        "radius": 0.3,
+        "xmlFile": "text/exhibit_plaque.xml",
+        "position": {
+          "x": -51.3189,
+          "y": 13.22399,
+          "z": 220.2034
+        }
+      }
+    ],
+    "translatorText": [
+      {
+        "alignRadial": true,
+        "type": "recorder",
+        "xmlFile": "text/exhibit_recording.xml",
+        "position": {
+          "x": -53.35086,
+          "y": 14.35553,
+          "z": 219.531
+        },
+        "rotation": {
+          "x": 0,
+          "y": 180,
+          "z": 0
+        }
+      }
+    ],
     "singularities": [
       {
         "horizonRadius": 1,
-        "targetStarSystem": "EskerSystem",
+        "targetStarSystem": "GabbroSystem",
         "type": "blackHole",
         "position": {
           "x": 29.99329,

@@ -1,0 +1,52 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Gabbro</NameField>
+
+  <DialogueNode>
+    <Name>INITIAL1</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Hey, looks like you found a way into my mind, huh? Hope you're liking it alright, most people don't care for zero-g without a suit.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>It wasn't the most fun.</Text>
+        <DialogueTarget>INITIAL2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INITIAL2</Name>
+    <Dialogue>
+      <Page>Heh, I hear ya, glad I've got this little spot to hang out on. Now, I assume you didn't come here just for a deeper connection with your time buddy, so was there something that you needed?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I need to know what Slate's favorite memory is.</Text>
+        <DialogueTarget>INITIAL3</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INITIAL3</Name>
+    <Dialogue>
+      <Page>Woah, bit of a personal question there, don't you think? Plus, I can't even say that I properly know. I think they told me at one point, but I wasn't really paying attention.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Please, it's important.</Text>
+        <DialogueTarget>INITIAL4</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INITIAL4</Name>
+    <Dialogue>
+      <Page>Alright, but only because you're my time buddy. What do I remember… I remember them talking about Feldspar doing something, so I don't think it actually had to do with something Slate did.</Page>
+      <Page>Good luck with whatever you're doing! Try not to die too horribly!</Page>
+    </Dialogue>
+    <SetCondition>GABBRO_TALKED</SetCondition>
+  </DialogueNode>
+</DialogueTree>

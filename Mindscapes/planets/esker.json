@@ -25,14 +25,33 @@
         "assetBundle": "assetbundles/esker_area",
         "path": "Assets/Prefabs/mindscapes/esker_area.prefab"
       }
+    ],
+    "dialogue": [
+      {
+        "parentPath": "Sector/esker_area/Villager_HEA_Esker_ANIM_Rocking",
+        "pathToAnimController": "Sector/esker_area/Villager_HEA_Esker_ANIM_Rocking",
+        "isRelativeToParent": true,
+        "radius": 0.7,
+        "xmlFile": "text/esker.xml",
+        "position": {
+          "x": 0,
+          "y": 1.3018,
+          "z": 0
+        }
+      }
     ]
   },
   "Spawn": {
     "playerSpawn": {
       "startWithSuit": false,
       "position": {
+        "x": 7.84,
+        "y": 12.8,
+        "z": 17.26
+      },
+      "rotation": {
         "x": 0,
-        "y": 25,
+        "y": 200,
         "z": 0
       }
     },
