@@ -14,6 +14,8 @@ namespace Mindscapes.miscbehaviours
         private static Material readyMat = null;
         private static Material unreadyMat = null;
         private static int raceIndex = 0;
+        private static float startTime = -1;
+        private static float raceDuration = 50;
 
         //Instanced
         private bool isNext = false;
@@ -30,17 +32,17 @@ namespace Mindscapes.miscbehaviours
             trigger = GetComponent<OWTriggerVolume>();
             trigger.OnEntry += OnEnter;
 
-            //If it's the first one, save the mat and ready it
+            //If it's the first one, save the mat
             if(goals.Count == 1)
             {
                 readyMat = renderer.material;
-                Activate();
             }
 
             //If it's the second one, just save the mat
             if(goals.Count == 2)
             {
                 unreadyMat = renderer.material;
+                goals[0].Deactivate();
             }
         }
 
@@ -70,6 +72,7 @@ namespace Mindscapes.miscbehaviours
             if(other.CompareTag("ShipDetector") && isNext)
             {
                 Mindscapes.DebugPrint("Goal hit!");
+                startTime = Time.time;
                 Deactivate();
                 raceIndex++;
                 if (raceIndex < goals.Count)
@@ -79,6 +82,7 @@ namespace Mindscapes.miscbehaviours
                 else
                 {
                     Mindscapes.DebugPrint("race won!");
+                    DialogueConditionManager.SharedInstance.SetConditionState("RACE_WON", true);
                 }
             }
         }
@@ -89,6 +93,15 @@ namespace Mindscapes.miscbehaviours
         private void OnDestroy()
         {
             trigger.OnEntry -= OnEnter;
+        }
+
+        /**
+         * Check if the player has failed the race
+         */
+        private void Update()
+        {
+            if (startTime > 0 && Time.time > startTime + raceDuration)
+                DisableRace();
         }
 
         /**
@@ -114,6 +127,20 @@ namespace Mindscapes.miscbehaviours
         {
             goals = new List<Goal>();
             raceIndex = 0;
+        }
+
+        /**
+         * Disables the race
+         */
+        public static void DisableRace()
+        {
+            raceIndex = 0;
+            startTime = -1;
+            DialogueConditionManager.SharedInstance.SetConditionState("RACE_FAILED", true);
+            foreach(Goal goal in goals)
+            {
+                goal.Deactivate();
+            }
         }
     }
 }

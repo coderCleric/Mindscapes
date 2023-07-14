@@ -1,0 +1,99 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Feldspar</NameField>
+
+  <!--This is all just the initial dialogue-->
+  <DialogueNode>
+    <Name>INITIAL1</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Oh, hey little buddy! Got a talent for showing up in unexpected places, don’t ya? First you manage to find me all the way in Dark Bramble, then here you are showing up in my mind!</Page>
+      <Page>Was there something you needed, or just showing off your knack for exploring the unexplorable?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I was actually wondering if you could tell me about Slate’s favorite memory.</Text>
+        <DialogueTarget>INITIAL2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INITIAL2</Name>
+    <Dialogue>
+      <Page>Sure I can! Buuuut, that would hardly be any fun now, would it? Since we’re in my mind, playing by my rules, I say you’ve gotta earn it. How you ask? Why a race course of… course.</Page>
+      <Page>Oh, but this won’t be any normal A to B race, no, more of an A B A B C race. You see those red spheres in the sky above us? I’m going to light one up green, then, once you’ve reached that, I’ll light one on the opposite end.</Page>
+      <Page>It’ll be your job to zip between them as fast as you can, ending with the highest one on the very top. I’ll give you… 50 seconds! That should be plenty of time for a pilot experienced enough to go through Dark Bramble.</Page>
+      <Page>Just let me know when you’re ready, and I’ll start the timer once you reach the first goal</Page>
+    </Dialogue>
+    <SetCondition>FELDSPAR_TALKED</SetCondition>
+  </DialogueNode>
+
+  <!--After talking-->
+  <DialogueNode>
+    <Name>RETURN1</Name>
+    <EntryCondition>FELDSPAR_TALKED</EntryCondition>
+    <Dialogue>
+      <Page>So, ready to get started?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Yep, let me at it!</Text>
+        <DialogueTarget>RACE_ACCEPTED</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Not just yet.</Text>
+        <DialogueTarget>RACE_DENIED</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>RACE_ACCEPTED</Name>
+    <Dialogue>
+      <Page>That’s the spirit! I’ll give you 50 seconds from the first goal you touch, so you better hurry!</Page>
+    </Dialogue>
+    <SetCondition>RACE_STARTED</SetCondition>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>RACE_DENIED</Name>
+    <Dialogue>
+      <Page>Alright, let me know when you are!</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <!--If the player fails-->
+  <DialogueNode>
+    <Name>RACE_LOST</Name>
+    <EntryCondition>RACE_FAILED</EntryCondition>
+    <Dialogue>
+      <Page>Hmm, not quite fast enough, I don’t think. You can always try again though, so no pressure little buddy!</Page>
+    </Dialogue>
+    <DialogueTarget>RETURN1</DialogueTarget>
+  </DialogueNode>
+
+  <!--If the player wins-->
+  <DialogueNode>
+    <Name>WIN1</Name>
+    <EntryCondition>RACE_WON</EntryCondition>
+    <Dialogue>
+      <Page>That’s how it’s done! That was blazing fast, we might make a decent astronaut out of you yet! Now, you asked me about Slate’s favorite memory…</Page>
+      <Page>Now, I know you did some fancy flying just now, but I still feel like it would be too easy to just tell you. So instead, here’s a hint; it has to do with our little space program.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>That’s it?</Text>
+        <DialogueTarget>WIN2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>WIN2</Name>
+    <Dialogue>
+      <Page>Yep! Oh come on, don’t give me that look! You figured out how to navigate the most hostile planet in the solar system, I’m sure you can figure out what their favorite memory is.</Page>
+      <Page>Now get going, before I decide that you have to do another race!</Page>
+    </Dialogue>
+    <SetPersistentCondition>FELDSPAR_REMEMBERED</SetPersistentCondition>
+  </DialogueNode>
+</DialogueTree>

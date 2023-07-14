@@ -31,6 +31,19 @@
         "assetBundle": "assetbundles/feldspar_area",
         "path": "Assets/Prefabs/mindscapes/feldspar_area.prefab"
       }
+    ],
+    "dialogue": [
+      {
+        "parentPath": "Sector/feldspar_area/Traveller_HEA_Feldspar_ANIM_Talking",
+        "isRelativeToParent": true,
+        "radius": 0.4,
+        "xmlFile": "text/feldspar.xml",
+        "position": {
+          "x": 0,
+          "y": 0.7091,
+          "z": -0.528
+        }
+      }
     ]
   },
   "Spawn": {

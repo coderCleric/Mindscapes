@@ -23,5 +23,21 @@ namespace Mindscapes
         {
             return !(__instance.gameObject.GetComponent<InvadeTrigger>() != null && InvadeTrigger.shouldBeActive);
         }
+
+        /**
+         * Listen for key conditions being set to alter the game state
+         * 
+         * @param conditionName The name of the condition being set
+         */
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(DialogueConditionManager), nameof(DialogueConditionManager.SetConditionState))]
+        public static void ConditionListener(string conditionName)
+        {
+            //Restart the race when the player accepts
+            if(conditionName.Equals("RACE_STARTED"))
+            {
+                Goal.SoftReset();
+            }
+        }
     }
 }
