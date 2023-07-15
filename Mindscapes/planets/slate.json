@@ -29,6 +29,210 @@
           "y": 270,
           "z": 0
         }
+      },
+      {
+        "rename": "VisionTorch",
+        "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
+        "position": {
+          "x": -3.1452,
+          "y": 1.1478,
+          "z": 102.6402
+        },
+        "rotation": {
+          "x": 338.8153,
+          "y": 27.6,
+          "z": 4.2909
+        }
+      }
+    ],
+    "dialogue": [
+      {
+        "parentPath": "Sector/slate_area/house/Villager_HEA_Slate_ANIM_LogSit",
+        "isRelativeToParent": true,
+        "radius": 0.5,
+        "xmlFile": "text/guardslate.xml",
+        "position": {
+          "x": 0,
+          "y": 0.7091,
+          "z": -0.416
+        }
+      },
+      {
+        "parentPath": "Sector/slate_area/house/Villager_HEA_Slate_ANIM_LogSit (1)",
+        "isRelativeToParent": true,
+        "radius": 0.5,
+        "xmlFile": "text/innerslate.xml",
+        "position": {
+          "x": 0,
+          "y": 0.7091,
+          "z": -0.416
+        }
+      },
+      {
+        "parentPath": "Sector/slate_area/house/Villager_HEA_Slate_ANIM_LogSit (1)",
+        "isRelativeToParent": true,
+        "radius": 0,
+        "xmlFile": "text/slateexit.xml",
+        "position": {
+          "x": 0,
+          "y": 0.7091,
+          "z": -0.416
+        },
+        "remoteTrigger": {
+          "prereqCondition": "EXITOPENED",
+          "radius": 4,
+          "position": {
+            "x": 0,
+            "y": 3.5,
+            "z": 101.48
+          }
+        }
+      }
+    ],
+    "singularities": [
+      {
+        "rename": "slate_singularity",
+        "horizonRadius": 2,
+        "position": {
+          "x": 0,
+          "y": 3.5,
+          "z": 101.48
+        }
+      }
+    ],
+    "slideShows": [
+      {
+        "type": "visionTorchTarget",
+        "parentPath": "Sector/slate_area/house/Villager_HEA_Slate_ANIM_LogSit (1)",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0,
+          "y": 0.7091,
+          "z": -0.416
+        },
+        "slides": [
+          { "imagePath": "slides/blackscreen.png" },
+          { "imagePath": "slides/half_awake.png" },
+          { "imagePath": "slides/full_awake.png" },
+          { "imagePath": "slides/down1.png" },
+          { "imagePath": "slides/down2.png" },
+          { "imagePath": "slides/down3.png" },
+          { "imagePath": "slides/down3.png" },
+          { "imagePath": "slides/right1.png" },
+          { "imagePath": "slides/right2.png" },
+          { "imagePath": "slides/walk1.png" },
+          { "imagePath": "slides/walk2.png" },
+          { "imagePath": "slides/walk3.png" },
+          { "imagePath": "slides/ride1.png" },
+          { "imagePath": "slides/ride2.png" },
+          { "imagePath": "slides/ride3.png" },
+          { "imagePath": "slides/ride4.png" },
+          { "imagePath": "slides/ride5.png" },
+          { "imagePath": "slides/ride5.png" },
+          { "imagePath": "slides/moon_land0.png" },
+          { "imagePath": "slides/moon_land1.png" },
+          { "imagePath": "slides/moon_land2.png" },
+          { "imagePath": "slides/moon_land3.png" },
+          { "imagePath": "slides/suff1.png" },
+          { "imagePath": "slides/suff2.png" },
+          { "imagePath": "slides/suff3.png" },
+          { "imagePath": "slides/suff4.png" },
+          { "imagePath": "slides/suff4.3.png" },
+          { "imagePath": "slides/suff4.6.png" },
+          { "imagePath": "slides/suff5.png" },
+          { "imagePath": "slides/suff5.png" },
+          { "imagePath": "slides/suff5.5.png" },
+          { "imagePath": "slides/suff6.png" },
+          { "imagePath": "slides/suff7.png" },
+          { "imagePath": "slides/suff8.png" },
+          { "imagePath": "slides/suff9.png" },
+          { "imagePath": "slides/blackscreen.png" },
+          { "imagePath": "slides/mask1.png" },
+          { "imagePath": "slides/mask2.png" },
+          { "imagePath": "slides/mask3.png" },
+          { "imagePath": "slides/mask4.png" },
+          { "imagePath": "slides/blackscreen.png" },
+          { "imagePath": "slides/half_awake.png" },
+          { "imagePath": "slides/full_awake.png" },
+          { "imagePath": "slides/down1.png" },
+          { "imagePath": "slides/down2.png" },
+          { "imagePath": "slides/down3.png" },
+          { "imagePath": "slides/down3.png" },
+          { "imagePath": "slides/down3.png" },
+          { "imagePath": "slides/sand1.png" },
+          { "imagePath": "slides/sand2.png" },
+          { "imagePath": "slides/sand3.png" },
+          { "imagePath": "slides/sand4.png" },
+          { "imagePath": "slides/mask1.png" },
+          { "imagePath": "slides/elev1.png" },
+          { "imagePath": "slides/elev2.png" },
+          { "imagePath": "slides/elev3.png" },
+          { "imagePath": "slides/elev4.png" },
+          { "imagePath": "slides/mask2.png" },
+          { "imagePath": "slides/sun1.png" },
+          { "imagePath": "slides/sun2.png" },
+          { "imagePath": "slides/sun3.png" },
+          { "imagePath": "slides/sun4.png" },
+          { "imagePath": "slides/mask3.png" },
+          { "imagePath": "slides/fish1.png" },
+          { "imagePath": "slides/fish2.png" },
+          { "imagePath": "slides/fish3.png" },
+          { "imagePath": "slides/fish4.png" },
+          { "imagePath": "slides/mask4.png" },
+          { "imagePath": "slides/full_awake.png" },
+          { "imagePath": "slides/down1.png" },
+          { "imagePath": "slides/down2.png" },
+          { "imagePath": "slides/down3.png" },
+          { "imagePath": "slides/right1.png" },
+          { "imagePath": "slides/right2.png" },
+          { "imagePath": "slides/right2.png" },
+          { "imagePath": "slides/nova1.png" },
+          { "imagePath": "slides/nova2.png" },
+          { "imagePath": "slides/nova3.png" },
+          { "imagePath": "slides/nova4.png" },
+          { "imagePath": "slides/nova5.png" },
+          { "imagePath": "slides/nova6.png" },
+          { "imagePath": "slides/nova7.png" },
+          { "imagePath": "slides/nova8.png" },
+          { "imagePath": "slides/nova9.png" },
+          { "imagePath": "slides/nova10.png" },
+          { "imagePath": "slides/thnova1.png" },
+          { "imagePath": "slides/thnova2.png" },
+          { "imagePath": "slides/thnova3.png" },
+          { "imagePath": "slides/thnova4.png" },
+          { "imagePath": "slides/thnova5.png" },
+          { "imagePath": "slides/thnova6.png" },
+          { "imagePath": "slides/thnova7.png" },
+          { "imagePath": "slides/blackscreen.png" },
+          { "imagePath": "slides/mask1.png" },
+          { "imagePath": "slides/mask2.png" },
+          { "imagePath": "slides/mask3.png" },
+          { "imagePath": "slides/mask4.png" },
+          { "imagePath": "slides/blackscreen.png" },
+          { "imagePath": "slides/half_awake.png" },
+          { "imagePath": "slides/full_awake.png" },
+          { "imagePath": "slides/down1.png" },
+          { "imagePath": "slides/down2.png" },
+          { "imagePath": "slides/down3.png" },
+          { "imagePath": "slides/down3.png" },
+          { "imagePath": "slides/down3.png" }
+        ]
+      }
+    ]
+  },
+  "Volumes": {
+    "creditsVolume": [
+      {
+        "rename": "credits_volume",
+        "creditsType": "fast",
+        "deathType": "blackHole",
+        "gameOverText": "SLATE BELIEVES YOU",
+        "radius": 2,
+        "position": {
+          "x": 0,
+          "y": 3.5,
+          "z": 101.48
+        }
       }
     ]
   },

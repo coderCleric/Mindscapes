@@ -5,6 +5,7 @@ using UnityEngine;
 using Mindscapes.miscbehaviours;
 using HarmonyLib;
 using System.Reflection;
+using UnityEngine.InputSystem;
 
 namespace Mindscapes
 {
@@ -116,9 +117,14 @@ namespace Mindscapes
                 }
             }
 
-            //Only do this in Esker's mind
-            else if (s.Equals("EskerSystem"))
+            //Only do this in Slate's mind
+            else if (s.Equals("SlateSystem"))
             {
+                Transform sectorRoot = newHorizons.GetPlanet("Slate").transform.Find("Sector");
+                sectorRoot.Find("VisionTorch").gameObject.SetActive(false);
+                sectorRoot.Find("slate_area/house/torch_light").gameObject.SetActive(false);
+                sectorRoot.Find("slate_singularity").gameObject.SetActive(false);
+                sectorRoot.Find("credits_volume").gameObject.SetActive(false);
             }
         }
 
@@ -181,6 +187,26 @@ namespace Mindscapes
                 {
                     plat.gameObject.SetActive(true);
                 }
+            }
+
+            //Debug thing, remove
+            if (Keyboard.current[Key.K].wasPressedThisFrame)
+            {
+                DebugPrint("Resetting rememberances");
+                PlayerData.SetPersistentCondition("ESKER_REMEMBERED", false);
+                PlayerData.SetPersistentCondition("FELDSPAR_REMEMBERED", false);
+                PlayerData.SetPersistentCondition("CHERT_REMEMBERED", false);
+                PlayerData.SetPersistentCondition("RIEBECK_REMEMBERED", false);
+                PlayerData.SetPersistentCondition("GABBRO_REMEMBERED", false);
+            }
+            if (Keyboard.current[Key.L].wasPressedThisFrame)
+            {
+                DebugPrint("Earning rememberances");
+                PlayerData.SetPersistentCondition("ESKER_REMEMBERED", true);
+                PlayerData.SetPersistentCondition("FELDSPAR_REMEMBERED", true);
+                PlayerData.SetPersistentCondition("CHERT_REMEMBERED", true);
+                PlayerData.SetPersistentCondition("RIEBECK_REMEMBERED", true);
+                PlayerData.SetPersistentCondition("GABBRO_REMEMBERED", true);
             }
         }
 

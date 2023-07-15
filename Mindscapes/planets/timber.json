@@ -50,7 +50,7 @@
     "singularities": [
       {
         "horizonRadius": 1,
-        "targetStarSystem": "FeldsparSystem",
+        "targetStarSystem": "SlateSystem",
         "type": "blackHole",
         "position": {
           "x": 29.99329,

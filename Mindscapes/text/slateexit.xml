@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Slate</NameField>
+
+  <DialogueNode>
+    <Name>INITIAL</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Hey, before you go, I'm sorry for getting mad at you. I thought you were being a silly hatchling and trying to play a prank through massively unethical means and, well, got a bit more than a little annoyed.</Page>
+      <Page>I maybe should've guessed it wasn't a prank, since getting past my guard means you figured out what my favorite memory is. I still remember that night so clearly, Feldspar's voice carrying over the crowd, the excited looks on everyone as they were told that we were going to space...</Page>
+      <Page>Ah, I got caught up reminiscing. Don't let me hold you up any more, we've got business to get to!</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>

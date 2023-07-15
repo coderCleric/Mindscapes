@@ -1,0 +1,107 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>"Slate?"</NameField>
+
+  <!--This is all just the initial dialogue-->
+  <DialogueNode>
+    <Name>INITIAL1</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Whoa, hey, who're you? What're you doing here?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Umm, it's me? You've spent the last 6 months building my ship, remember?</Text>
+        <DialogueTarget>TRUTH1</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I'm Slate.</Text>
+        <DialogueTarget>LIE1</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <!--If the player tells the truth-->
+  <DialogueNode>
+    <Name>TRUTH1</Name>
+    <Dialogue>
+      <Page>Building your ship... Oh! You must be looking for Inner Slate!</Page>
+      <Page>Unfortunately, I can't let you through. Inner Slate made me to make sure nobody infiltrates their mind palace.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>But the Sun is going to explode!</Text>
+        <DialogueTarget>TRUTH2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>TRUTH2</Name>
+    <Dialogue>
+      <Page>Sorry buddy, I don't make the rules, I just enforce them.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <!--If the player tries to impersonate-->
+  <DialogueNode>
+    <Name>LIE1</Name>
+    <Dialogue>
+      <Page>...Yeah, sure you are. If you're really Slate, then do you mind telling me what Slate's favorite memory is?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>No idea, see ya!</Text>
+        <DialogueTarget>NOIDEA</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Uh... Roasting marshmallows?</Text>
+        <DialogueTarget>MALLOWGUESS</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <RequiredPersistentCondition>FELDSPAR_REMEMBERED</RequiredPersistentCondition>
+        <RequiredPersistentCondition>ESKER_REMEMBERED</RequiredPersistentCondition>
+        <RequiredPersistentCondition>RIEBECK_REMEMBERED</RequiredPersistentCondition>
+        <RequiredPersistentCondition>CHERT_REMEMBERED</RequiredPersistentCondition>
+        <RequiredPersistentCondition>GABBRO_REMEMBERED</RequiredPersistentCondition>
+        <Text>The night that Feldspar announced the founding of Outer Wilds Ventures to the village!</Text>
+        <DialogueTarget>CORRECTANSWER</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <!--If the player says they have no idea-->
+  <DialogueNode>
+    <Name>NOIDEA</Name>
+    <Dialogue>
+      <Page>Heh, fair enough. I wouldn't try too hard to figure it out either, Inner Slate keeps their mind locked up tighter than most. Heh, I bet the only way you could figure out their favorite memory would be by asking the travelers in their minds!</Page>
+      <Page>...Um, actually, forget that I said that.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <!--If the player makes the mallow guess-->
+  <DialogueNode>
+    <Name>MALLOWGUESS</Name>
+    <Dialogue>
+      <Page>Good guess! But no. I wouldn't try too hard to figure it out either, Inner Slate keeps their mind locked up tighter than most. Heh, I bet the only way you could figure out their favorite memory would be by asking the travelers in their minds!</Page>
+      <Page>...Um, actually, forget that I said that.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <!--If the player makes the correct guess-->
+  <DialogueNode>
+    <Name>CORRECTANSWER</Name>
+    <Dialogue>
+      <Page>Huh, so you actually are Slate! Sorry for not recognizin' ya boss, go right on in!</Page>
+    </Dialogue>
+    <SetCondition>GUARDFOOLED</SetCondition>
+  </DialogueNode>
+  
+  <!--If the player already fooled the guard-->
+  <DialogueNode>
+    <Name>FOOLEDGUARD</Name>
+    <EntryCondition>GUARDFOOLED</EntryCondition>
+    <Dialogue>
+      <Page>See ya, inner Slate!</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>

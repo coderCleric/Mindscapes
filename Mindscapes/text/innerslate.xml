@@ -1,0 +1,95 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Slate</NameField>
+
+  <!--This is all just the initial dialogue-->
+  <DialogueNode>
+    <Name>INITIAL1</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Hatchling? What are you doing here? Actually, scratch that question, how'd you get in here!?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>That's not important right now! I'm stuck in a time loop, and the Sun's going to explode, and-</Text>
+        <DialogueTarget>INITIAL2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INITIAL2</Name>
+    <Dialogue>
+      <Page>Whoa, wait, are you serious?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Yes! The Nomai-</Text>
+        <DialogueTarget>INITIAL3</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INITIAL3</Name>
+    <Dialogue>
+      <Page>You pull who-knows-what to get inside my mind, then trick my personal mind palace guard into thinking that you're me, just to try and play some prank about the Sun exploding?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>No, I-</Text>
+        <DialogueTarget>INITIAL4</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INITIAL4</Name>
+    <Dialogue>
+      <Page>Honestly! I know we all call you Hatchling because you're our youngest member, but that doesn't give you an excuse to act like one!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>But-</Text>
+        <DialogueTarget>INITIAL5</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INITIAL5</Name>
+    <Dialogue>
+      <Page>No! Here's what we're gonna do. First of all, you're gonna stop violating my privacy and get out of my head ASAP! Then, I'm gonna go talk to Hornfels and let them know that you still need some time to mature before you go into space.</Page>
+    </Dialogue>
+    <SetCondition>SLATEMAD</SetCondition>
+  </DialogueNode>
+  
+  <!--When they're angry-->
+  <DialogueNode>
+    <Name>ANGRY</Name>
+    <EntryCondition>SLATEMAD</EntryCondition>
+    <Dialogue>
+      <Page>Hatchling, I don't want to hear any apologies from you until you're out of my head.</Page>
+    </Dialogue>
+  </DialogueNode>
+  
+  <!--When they've been torched-->
+  <DialogueNode>
+    <Name>TORCHED</Name>
+    <EntryCondition>SLATETORCHED</EntryCondition>
+    <Dialogue>
+      <Page>I... did all of that... you weren't kidding, were you hatchling? You actually are in a time loop? The Sun is actually going to explode? Everyone we know...</Page>
+      <Page>We've got to get moving! It'll be cramped, and it'll be even more rushed, but if we can get everybody aboard a ship we might be able to get away from the Sun in time!</Page>
+      <Page>Quick! I opened a black hole in the doorway, it'll let you out of my mind without killing you horribly.</Page>
+    </Dialogue>
+    <SetCondition>EXITOPENED</SetCondition>
+  </DialogueNode>
+  
+  <!--When the exit is open-->
+  <DialogueNode>
+    <Name>RUSHED</Name>
+    <EntryCondition>EXITOPENED</EntryCondition>
+    <Dialogue>
+      <Page>We've got to get moving Hatchling, the whole village is in horrible danger!</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>
