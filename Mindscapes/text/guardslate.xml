@@ -18,6 +18,7 @@
         <DialogueTarget>LIE1</DialogueTarget>
       </DialogueOption>
     </DialogueOptionsList>
+    <SetPersistentCondition>MINDSCAPES_GUARD_ENCOUNTERED</SetPersistentCondition>
   </DialogueNode>
 
   <!--If the player tells the truth-->
@@ -76,6 +77,7 @@
       <Page>Heh, fair enough. I wouldn't try too hard to figure it out either, Inner Slate keeps their mind locked up tighter than most. Heh, I bet the only way you could figure out their favorite memory would be by asking the travelers in their minds!</Page>
       <Page>...Um, actually, forget that I said that.</Page>
     </Dialogue>
+    <SetPersistentCondition>MINDSCAPES_GUARD_HINT</SetPersistentCondition>
   </DialogueNode>
 
   <!--If the player makes the mallow guess-->
@@ -85,6 +87,7 @@
       <Page>Good guess! But no. I wouldn't try too hard to figure it out either, Inner Slate keeps their mind locked up tighter than most. Heh, I bet the only way you could figure out their favorite memory would be by asking the travelers in their minds!</Page>
       <Page>...Um, actually, forget that I said that.</Page>
     </Dialogue>
+    <SetPersistentCondition>MINDSCAPES_GUARD_HINT</SetPersistentCondition>
   </DialogueNode>
 
   <!--If the player makes the correct guess-->

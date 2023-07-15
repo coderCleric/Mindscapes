@@ -65,10 +65,8 @@ namespace Mindscapes.miscbehaviours
         public static void ActivateTriggers()
         {
             shouldBeActive = true;
-            Mindscapes.DebugPrint("test1");
             foreach(InvadeTrigger trigger in triggers)
             {
-                Mindscapes.DebugPrint("test2");
                 trigger.originalPromptText = trigger.interactVolume._screenPrompt.GetText();
                 trigger.interactVolume._screenPrompt.SetText("Invade Mind");
             }

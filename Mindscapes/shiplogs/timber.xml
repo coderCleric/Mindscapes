@@ -1,0 +1,91 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>TIMBER_HEARTH</ID>
+
+  <!--Entry for the nomai device-->
+  <Entry>
+    <ID>MINDSCAPES_NOMAI_DEVICE</ID>
+    <Name>Nomai Device</Name>
+
+    <Curiosity>MINDSCAPES</Curiosity>
+
+    <RumorFact>
+      <ID>MINDSCAPES_DEVICE_RUMOR</ID>
+      <RumorName>New Exhibit</RumorName>
+      <Text>Apparently there's a new exhibit in the observatory.</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>MINDSCAPES_EXHIBIT_PLAQUE</ID>
+      <Text>The new exhibit in the observatory is a Nomai device that was found on Brittle Hollow.</Text>
+    </ExploreFact>
+
+    <ExploreFact>
+      <ID>MINDSCAPES_EXHIBIT_RECORDER</ID>
+      <Text>Apparently, the device allows a user to go into the mindscape of somebody else.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!--Entry for Slate's mind-->
+  <Entry>
+    <ID>MINDSCAPES_SLATES_MIND</ID>
+    <Name>Slate's Mind</Name>
+
+    <Curiosity>MINDSCAPES</Curiosity>
+    <IsCuriosity />
+
+    <RumorFact>
+      <ID>MINDSCAPES_SLATE_RUMOR</ID>
+      <SourceID>MINDSCAPES_NOMAI_DEVICE</SourceID>
+      <RumorName>Possible Escape</RumorName>
+      <Text>I may be able to use the Nomai device to convince Slate that the Sun is going to go supernova.</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>MINDSCAPES_SLATE_GUARD</ID>
+      <Text>Slate's mind palace has a guard outside, who refuses to let me pass.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!--Entry for figuring out the memory-->
+  <Entry>
+    <ID>MINDSCAPES_TRAVELLERS</ID>
+    <Name>Favorite Memory</Name>
+    <Curiosity>MINDSCAPES</Curiosity>
+
+    <RumorFact>
+      <ID>MINDSCAPES_MEMORY_RUMOR</ID>
+      <SourceID>MINDSCAPES_SLATES_MIND</SourceID>
+      <Text>To get past the guard, I need to know Slate's favorite memory. I may be able to figure out Slate's favorite memory by visiting the minds of the Outer Wilds Ventures astronauts.</Text>
+    </RumorFact>
+
+    <RumorFact>
+      <ID>MINDSCAPES_ESKER_RUMOR</ID>
+      <Text>Esker says that Slate's favorite memory probably happened before Esker was on the Attelrock.</Text>
+    </RumorFact>
+
+    <RumorFact>
+      <ID>MINDSCAPES_RIEBECK_RUMOR</ID>
+      <Text>Riebeck says that Slate's favorite memory probably revolves around an event that got Riebeck very excited, despite their usual nerves.</Text>
+    </RumorFact>
+
+    <RumorFact>
+      <ID>MINDSCAPES_GABBRO_RUMOR</ID>
+      <Text>Gabbro says that the memory probably has to do with something Feldspar did, not something that Slate did.</Text>
+    </RumorFact>
+
+    <RumorFact>
+      <ID>MINDSCAPES_CHERT_RUMOR</ID>
+      <Text>Chert says that the memory probably involves a group event.</Text>
+    </RumorFact>
+
+    <RumorFact>
+      <ID>MINDSCAPES_FELDSPAR_RUMOR</ID>
+      <Text>Feldspar says that the memory has to do with Outer Wilds Ventures.</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>MINDSCAPES_COMPLETION_ENTRY</ID>
+      <Text>I think I know what Slate's favorite memory is!</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

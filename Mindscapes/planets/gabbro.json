@@ -47,7 +47,7 @@
         "y": 2.64,
         "z": 0.56
       },
-      "startWithSuit": true
+      "startWithSuit": false
     }
   }
 }

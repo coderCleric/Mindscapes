@@ -51,7 +51,6 @@ namespace Mindscapes.miscbehaviours
         {
             if(!hasFallen && other.CompareTag("ProbeDetector"))
             {
-                Mindscapes.DebugPrint("star should fall");
                 hasFallen = true;
                 isFalling = true;
             }

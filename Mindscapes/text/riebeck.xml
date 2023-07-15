@@ -50,6 +50,6 @@
       <Page>I was absolutely terrified of the idea of doing this new thing that was being brought up, but... I was even more terrified by the idea of missing out, of sitting by and letting everyone else handle it.</Page>
       <Page>Sorry, I'm a bit emotional thinking back on it. That's probably all that I'm willing to say, I hope it helps!</Page>
     </Dialogue>
-    <SetCondition>RIEBECK_TALKED</SetCondition>
+    <SetPersistentCondition>RIEBECK_REMEMBERED</SetPersistentCondition>
   </DialogueNode>
 </DialogueTree>

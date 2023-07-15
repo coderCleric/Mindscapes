@@ -40,5 +40,15 @@
 
   <!--Ship log reveals go here-->
   <ShipLogConditions>
+    <RevealFact>
+      <FactID>MINDSCAPES_EXHIBIT_RECORDER</FactID>
+      <Condition>2</Condition>
+    </RevealFact>
+  </ShipLogConditions>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>MINDSCAPES_SLATE_RUMOR</FactID>
+      <Condition>2</Condition>
+    </RevealFact>
   </ShipLogConditions>
 </NomaiObject>

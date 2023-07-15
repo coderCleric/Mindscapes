@@ -47,6 +47,6 @@
       <Page>Alright, but only because you're my time buddy. What do I remember… I remember them talking about Feldspar doing something, so I don't think it actually had to do with something Slate did.</Page>
       <Page>Good luck with whatever you're doing! Try not to die too horribly!</Page>
     </Dialogue>
-    <SetCondition>GABBRO_TALKED</SetCondition>
+    <SetPersistentCondition>GABBRO_REMEMBERED</SetPersistentCondition>
   </DialogueNode>
 </DialogueTree>

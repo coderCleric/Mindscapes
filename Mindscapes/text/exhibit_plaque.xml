@@ -9,5 +9,8 @@
       <Page>It is not currently understood what this device was used for, but it is hoped that the recording, which was found next to the device, may provide some clues once translated.</Page>
       <Page>You might also notice that the usual protective case is not present on this exhibit. This is solely to provide access to the recording. Do NOT touch the device!</Page>
     </Dialogue>
+    <RevealFacts>
+      <FactID>MINDSCAPES_EXHIBIT_PLAQUE</FactID>
+    </RevealFacts>
   </DialogueNode>
 </DialogueTree>

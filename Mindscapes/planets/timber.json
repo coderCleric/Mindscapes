@@ -1,6 +1,10 @@
 {
   "name": "Timber Hearth",
   "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "ShipLog": {
+    "xmlFile": "shiplogs/timber.xml",
+    "spriteFolder": "shiplogs/images"
+  },
   "Props": {
     "details": [
       {
@@ -47,15 +51,25 @@
         }
       }
     ],
-    "singularities": [
+    "entryLocation": [
       {
-        "horizonRadius": 1,
-        "targetStarSystem": "SlateSystem",
-        "type": "blackHole",
+        "parentPath": "Sector_TH/mind_exhibit",
+        "isRelativeToParent": true,
+        "id": "MINDSCAPES_NOMAI_DEVICE",
         "position": {
-          "x": 29.99329,
-          "y": -47.46227,
-          "z": 184.0056
+          "x": -0.9782,
+          "y": 1.6873,
+          "z": 0
+        }
+      },
+      {
+        "parentPath": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate",
+        "isRelativeToParent": true,
+        "id": "MINDSCAPES_SLATES_MIND",
+        "position": {
+          "x": 0,
+          "y": 1.8691,
+          "z": 0
         }
       }
     ]

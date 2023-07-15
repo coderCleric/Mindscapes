@@ -171,6 +171,52 @@ namespace Mindscapes
                 Locator.GetShipBody().GetComponent<ShipDamageController>().OnShipComponentRepaired += OnShipRepair;
                 Locator.GetShipBody().GetComponent<ShipDamageController>().OnShipHullRepaired += OnShipRepair;
             }
+
+            //Reveals ship log stuff in the main system
+            if (newHorizons.GetCurrentStarSystem().Equals("SolarSystem"))
+            {
+                //Slate's guard
+                if (PlayerData._currentGameSave.GetPersistentCondition("MINDSCAPES_GUARD_ENCOUNTERED"))
+                {
+                    Locator.GetShipLogManager().RevealFact("MINDSCAPES_SLATE_GUARD");
+                }
+                if (PlayerData._currentGameSave.GetPersistentCondition("MINDSCAPES_GUARD_HINT"))
+                {
+                    Locator.GetShipLogManager().RevealFact("MINDSCAPES_MEMORY_RUMOR");
+                }
+
+                //Stuff for the hints from the travellers
+                int count = 0;
+                if(PlayerData._currentGameSave.GetPersistentCondition("ESKER_REMEMBERED"))
+                {
+                    Locator.GetShipLogManager().RevealFact("MINDSCAPES_ESKER_RUMOR");
+                    count++;
+                }
+                if (PlayerData._currentGameSave.GetPersistentCondition("CHERT_REMEMBERED"))
+                {
+                    Locator.GetShipLogManager().RevealFact("MINDSCAPES_CHERT_RUMOR");
+                    count++;
+                }
+                if (PlayerData._currentGameSave.GetPersistentCondition("GABBRO_REMEMBERED"))
+                {
+                    Locator.GetShipLogManager().RevealFact("MINDSCAPES_GABBRO_RUMOR");
+                    count++;
+                }
+                if (PlayerData._currentGameSave.GetPersistentCondition("RIEBECK_REMEMBERED"))
+                {
+                    Locator.GetShipLogManager().RevealFact("MINDSCAPES_RIEBECK_RUMOR");
+                    count++;
+                }
+                if (PlayerData._currentGameSave.GetPersistentCondition("FELDSPAR_REMEMBERED"))
+                {
+                    Locator.GetShipLogManager().RevealFact("MINDSCAPES_FELDSPAR_RUMOR");
+                    count++;
+                }
+                if(count == 5)
+                {
+                    Locator.GetShipLogManager().RevealFact("MINDSCAPES_COMPLETION_ENTRY");
+                }
+            }
         }
 
         /**
@@ -187,26 +233,6 @@ namespace Mindscapes
                 {
                     plat.gameObject.SetActive(true);
                 }
-            }
-
-            //Debug thing, remove
-            if (Keyboard.current[Key.K].wasPressedThisFrame)
-            {
-                DebugPrint("Resetting rememberances");
-                PlayerData.SetPersistentCondition("ESKER_REMEMBERED", false);
-                PlayerData.SetPersistentCondition("FELDSPAR_REMEMBERED", false);
-                PlayerData.SetPersistentCondition("CHERT_REMEMBERED", false);
-                PlayerData.SetPersistentCondition("RIEBECK_REMEMBERED", false);
-                PlayerData.SetPersistentCondition("GABBRO_REMEMBERED", false);
-            }
-            if (Keyboard.current[Key.L].wasPressedThisFrame)
-            {
-                DebugPrint("Earning rememberances");
-                PlayerData.SetPersistentCondition("ESKER_REMEMBERED", true);
-                PlayerData.SetPersistentCondition("FELDSPAR_REMEMBERED", true);
-                PlayerData.SetPersistentCondition("CHERT_REMEMBERED", true);
-                PlayerData.SetPersistentCondition("RIEBECK_REMEMBERED", true);
-                PlayerData.SetPersistentCondition("GABBRO_REMEMBERED", true);
             }
         }
 
