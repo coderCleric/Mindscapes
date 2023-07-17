@@ -51,7 +51,7 @@
       "alignRadial": true,
       "position": {
         "x": 0,
-        "y": 99.42,
+        "y": 102,
         "z": 0
       },
       "startWithSuit": true
@@ -60,7 +60,7 @@
       "alignRadial": true,
       "position": {
         "x": 0,
-        "y": 99.42,
+        "y": 102,
         "z": -10
       }
     }
