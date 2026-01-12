@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Mindscapes.miscbehaviours
 {
     public class InvadeTrigger : MonoBehaviour
     {
+        private string _interactPrompt;
+
         //Instanced things
         private SingleInteractionVolume interactVolume = null;
         private string originalPromptText = null;
@@ -29,6 +27,8 @@ namespace Mindscapes.miscbehaviours
             interactVolume.OnPressInteract += OnPressInteract;
 
             triggers.Add(this);
+
+            _interactPrompt = Mindscapes.instance.newHorizons.GetTranslationForOtherText("MINDSCPAES_INVADE_MIND_PROMPT");
         }
 
         /**
@@ -68,7 +68,7 @@ namespace Mindscapes.miscbehaviours
             foreach(InvadeTrigger trigger in triggers)
             {
                 trigger.originalPromptText = trigger.interactVolume._screenPrompt.GetText();
-                trigger.interactVolume._screenPrompt.SetText("Invade Mind");
+                trigger.interactVolume._screenPrompt.SetText(trigger._interactPrompt);
             }
         }
 
