@@ -1,0 +1,7 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+  "OtherDictionary": {
+    "MINDSCAPES_NOMAI_DEVICE": "Appareil nomaï",
+    "MINDSCPAES_INVADE_MIND_PROMPT": "Envahir l'esprit"
+  }
+}

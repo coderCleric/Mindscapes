@@ -9,12 +9,22 @@ namespace Mindscapes.miscbehaviours
 {
     public class MindDevice : OWItem
     {
+        private string _displayName;
+
+        public override void Awake()
+        {
+            base.Awake();
+
+            // We get this value once and cache it instead of doing it in GetDisplayName where it would be called repeatedly
+            _displayName = Mindscapes.instance.newHorizons.GetTranslationForOtherText("MINDSCAPES_NOMAI_DEVICE");
+        }
+
         /**
          * Gives the display name
          */
         public override string GetDisplayName()
         {
-            return "Nomai Device";
+            return _displayName;
         }
 
         /**
