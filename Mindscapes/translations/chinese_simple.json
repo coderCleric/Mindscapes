@@ -1,0 +1,166 @@
+{
+//该翻译补丁经检查有两处翻译文本未知是否生效。
+  "OtherDictionary": {
+    "MINDSCAPES_NOMAI_DEVICE": "挪麦装置", //未知是否生效
+    "MINDSCPAES_INVADE_MIND_PROMPT": "进入心灵" //未知是否生效
+  },
+
+  "UIDictionary": {
+    "MINDSCAPES_NOMAI_DEVICE": "挪麦装置", //未知是否生效
+    "MINDSCPAES_INVADE_MIND_PROMPT": "进入心灵", //未知是否生效
+
+    "Timber Hearth": "木炉星",
+    "MINDSCAPES:\nA new exhibit has been added to the observatory.": "心灵空间：\n天文台新增了一件展品。",
+    "SLATE BELIEVES YOU": "斯雷特相信了你"
+  },
+
+  "DialogueDictionary": {
+    //feldspar.xml
+    "Feldspar": "费尔德斯巴",
+    "Oh, hey little buddy! Got a talent for showing up in unexpected places, don’t ya? First you manage to find me all the way in Dark Bramble, then here you are showing up in my mind!": "哟，小家伙！你还真擅长出现在意想不到的地方，是吧？先是在黑棘星那头找到我，现在又跑到我的心灵空间里来了！",
+    "Was there something you needed, or just showing off your knack for exploring the unexplorable?": "你是有什么事要找我，还是单纯想显摆你探索未知之地的本事？",
+    "Sure I can! Buuuut, that would hardly be any fun now, would it? Since we’re in my mind, playing by my rules, I say you’ve gotta earn it. How you ask? Why a race course of… course.": "我当然可以！但——这多没意思啊，对吧？既然我们在我的心灵空间里，就得按我的规矩来，想知道答案就得自己挣。想知道怎么挣？那当然是跑个竞速赛道咯。",
+    "Oh, but this won’t be any normal A to B race, no, more of an A B A B C race. You see those red spheres in the sky above us? I’m going to light one up green, then, once you’ve reached that, I’ll light one on the opposite end.": "不过这可不是普通的从A点到B点的赛跑，而是A-B-A-B-C式的赛道。看到我们头顶那些红色球体了吗？我会先把其中一个亮成绿色，等你抵达那个目标后，我再点亮对面的另一个。",
+    "It’ll be your job to zip between them as fast as you can, ending with the highest one on the very top. I’ll give you… 50 seconds! That should be plenty of time for a pilot experienced enough to go through Dark Bramble.": "你的任务就是以最快速度在这些球体间穿梭，最后抵达最顶端那个最高的球体。我给你……50秒！对能闯过黑棘星的老练飞行员来说，这时间绰绰有余了。",
+    "Just let me know when you’re ready, and I’ll start the timer once you reach the first goal": "准备好就告诉我，等你碰到第一个目标我就开始计时。",
+    "So, ready to get started?": "怎么样，准备好开始了？",
+    "That’s the spirit! I’ll give you 50 seconds from the first goal you touch, so you better hurry!": "这才对嘛！从你碰到第一个目标开始，我只给你50秒，可得抓紧了！",
+    "Alright, let me know when you are!": "行，准备好了就说一声！",
+    "Hmm, not quite fast enough, I don’t think. You can always try again though, so no pressure little buddy!": "嗯……我看速度还差了点哦。不过你随时可以再试，别有压力嘛小家伙！",
+    "That’s how it’s done! That was blazing fast, we might make a decent astronaut out of you yet! Now, you asked me about Slate’s favorite memory…": "这就对了！速度快得离谱，说不定你能成为一名出色的宇航员呢！对了，你之前问我斯雷特最珍贵的回忆……",
+    "Now, I know you did some fancy flying just now, but I still feel like it would be too easy to just tell you. So instead, here’s a hint; it has to do with our little space program.": "我知道你刚才飞得超棒，但就这么直接告诉你也太没意思了。不如给你个提示：这事和我们那支小小的太空探险队有关。",
+    "Yep! Oh come on, don’t give me that look! You figured out how to navigate the most hostile planet in the solar system, I’m sure you can figure out what their favorite memory is.": "没猜错！哎呀，别那副表情嘛！你连太阳系里最凶险的星球都能闯明白，肯定能猜到斯雷特最珍贵的回忆是什么。",
+    "Now get going, before I decide that you have to do another race!": "赶紧去忙吧，不然我可要让你再跑一轮喽！",
+    "I was actually wondering if you could tell me about Slate’s favorite memory.": "其实我是想问问，你能不能告诉我斯雷特最珍贵的回忆是什么。",
+    "Yep, let me at it!": "没问题，放马过来！",
+    "Not just yet.": "还没准备好呢。",
+    "That’s it?": "就这？",
+
+    //guardslate.xml
+    "\"Slate?\"": "“斯雷特？”",
+    "Whoa, hey, who're you? What're you doing here?": "哇，等等，你是谁？跑来这儿干啥？",
+    "Building your ship... Oh! You must be looking for Inner Slate!": "在造你的飞船啊……哦！你肯定是来找“核心斯雷特”的吧！",
+    "Unfortunately, I can't let you through. Inner Slate made me to make sure nobody infiltrates their mind palace.": "抱歉啊，我不能让你进去。核心斯雷特创造我，就是为了防止有人潜入他的心灵宫殿。",
+    "Sorry buddy, I don't make the rules, I just enforce them.": "对不起啦伙计，规矩不是我定的，我只是照章办事。",
+    "...Yeah, sure you are. If you're really Slate, then do you mind telling me what Slate's favorite memory is?": "……呵，是吗。如果你真的是斯雷特，那不妨说说，斯雷特最珍贵的回忆是什么？",
+    "Heh, fair enough. I wouldn't try too hard to figure it out either, Inner Slate keeps their mind locked up tighter than most. Heh, I bet the only way you could figure out their favorite memory would be by asking the travelers in their minds!": "哈，这要求合情合理。换我也不会费劲儿去猜——核心斯雷特把自己的心思锁得比谁都紧。哼，我敢说，想知道他最珍贵的回忆，唯一的办法就是去问他心灵空间里的那些旅行者！",
+    "...Um, actually, forget that I said that.": "……呃，当我没说这话。",
+    "Good guess! But no. I wouldn't try too hard to figure it out either, Inner Slate keeps their mind locked up tighter than most. Heh, I bet the only way you could figure out their favorite memory would be by asking the travelers in their minds!": "猜得挺准！但不对。换我也不会费劲儿去猜——核心斯雷特把自己的心思锁得比谁都紧。哼，我敢说，想知道他最珍贵的回忆，唯一的办法就是去问他心灵空间里的那些旅行者！",
+    "...Um, actually, forget that I said that.": "……呃，当我没说这话。",
+    "Huh, so you actually are Slate! Sorry for not recognizin' ya boss, go right on in!": "哈，原来你真的是斯雷特！抱歉啊老大，没认出你来，快请进！",
+    "See ya, inner Slate!": "回见，核心斯雷特！",
+    "Umm, it's me? You've spent the last 6 months building my ship, remember?": "呃，是我啊？过去六个月你一直在帮我造飞船，忘了？",
+    "I'm Slate.": "我就是斯雷特。",
+    "But the Sun is going to explode!": "可太阳就要爆炸了啊！",
+    "No idea, see ya!": "不知道，回见！",
+    "Uh... Roasting marshmallows?": "呃……烤棉花糖？",
+    "The night that Feldspar announced the founding of Outer Wilds Ventures to the village!": "就是费尔德斯巴在村子里宣布成立星际拓荒探险队的那晚！",
+
+    //innerslate.xml
+    "Slate": "斯雷特",
+    "Hatchling? What are you doing here? Actually, scratch that question, how'd you get in here!?": "小家伙？你跑这儿来干嘛？等等，先别回答——你到底是怎么进来的！？",
+    "Whoa, wait, are you serious?": "哇，等等，你是认真的？",
+    "You pull who-knows-what to get inside my mind, then trick my personal mind palace guard into thinking that you're me, just to try and play some prank about the Sun exploding?": "你不知道用了什么鬼办法闯进我的心灵空间，还骗我心灵宫殿的专属守卫，让他以为你是我——就为了搞个“太阳要爆炸”的恶作剧？",
+    "Honestly! I know we all call you Hatchling because you're our youngest member, but that doesn't give you an excuse to act like one!": "说真的！我知道大家都叫你小家伙是因为你是队里最年轻的，但这也不是你胡闹的理由啊！",
+    "No! Here's what we're gonna do. First of all, you're gonna stop violating my privacy and get out of my head ASAP! Then, I'm gonna go talk to Hornfels and let them know that you still need some time to mature before you go into space.": "不行！听好了：首先，你立刻停止侵犯我的隐私，马上从我心灵空间里滚出去！然后我会去找霍恩费尔斯，跟他说你还得再历练历练，才能上天。",
+    "Hatchling, I don't want to hear any apologies from you until you're out of my head.": "小家伙，在你离开我的心灵空间之前，我不想听你任何道歉。",
+    "I... did all of that... you weren't kidding, were you hatchling? You actually are in a time loop? The Sun is actually going to explode? Everyone we know...": "我……我居然还怀疑你……小家伙，你没开玩笑？你真的被困在时间循环里了？太阳真的要爆炸了？我们认识的所有人……",
+    "We've got to get moving! It'll be cramped, and it'll be even more rushed, but if we can get everybody aboard a ship we might be able to get away from the Sun in time!": "我们得行动起来！飞船会很挤，时间也会非常赶，但只要能让所有人都登上飞船，或许我们还能及时逃离太阳的爆炸范围！",
+    "Quick! I opened a black hole in the doorway, it'll let you out of my mind without killing you horribly.": "快！我在门口开了个黑洞，从这儿出去能让你安全离开我的心灵空间，不会落得惨死的下场。",
+    "We've got to get moving Hatchling, the whole village is in horrible danger!": "我们得赶紧行动，小家伙，整个村庄都危在旦夕了！",
+    "That's not important right now! I'm stuck in a time loop, and the Sun's going to explode, and-": "现在说这些不重要！我被困在时间循环里，太阳马上就要爆炸了，而且——",
+    "Yes! The Nomai-": "是真的！那些挪麦人——",
+    "No, I-": "不，我——",
+    "But-": "可是——",
+
+    //chert.xml
+    "Chert": "切特",
+    "Oh, it's you! I can't say I expected to see you in here, not that I don't appreciate the company.": "哦，是你啊！真没想到会在这儿见到你——不过有个伴儿也挺好的。",
+    " Not now, sorry. I'm studying that star over there, I don't know why but... I have this feeling that something horrible is going to happen to it if I fail to figure out how to stop it.": "抱歉，现在没空。我在观测那边那颗恒星，不知道为什么……我总觉得，如果我找不到阻止它的办法，这颗星就要遭遇灭顶之灾了。",
+    "I just wish that it was closer, all of the stars are so far away that it's a constant struggle to gather any data that actually tells me anything.": "真希望它能近一点啊——所有恒星都太远了，想收集到有价值的数据简直难如登天。",
+    "Oh, wow! You actually brought it! This is going to make it so much easier to take readings from it!": "哇！你还真把它带来了！有了这个，观测数据会轻松多了！",
+    "Oh, right, go ahead!": "哦对，你尽管问！",
+    "Slate's favorite memory? Well, I'm not totally- Oh, what an interesting sunspot! A bit larger than normal, I wonder why that is...": "斯雷特最珍贵的回忆？嗯，我其实不太确定——哦！这太阳黑子真有意思！比平时大不少，到底是为啥呢……",
+    "Right, apologies. I'm honestly not totally sure, Slate always seemed the most at home around others though, so any sort of large gathering would probably be a good candidate.": "啊抱歉，跑神了。说实话我真不太清楚，但斯雷特向来在人群里最自在，所以大概率是和大型集会有关的事吧。",
+    "Can I ask you a question?": "我能问你个问题吗？",
+    "Can I ask that question now?": "现在能问了吗？",
+    "What's Slate's favorite memory?": "斯雷特最珍贵的回忆是什么？",
+    "Ahem...": "咳咳……",
+
+    //esker.xml
+    "Esker": "埃斯科",
+    "Oh, hey! You really are determined to keep me company, aren't ya? Finding a way into my mind and all. ...Actually, why exactly did you do that?": "哦，嘿！你还真是铁了心要陪我啊，是吧？居然想办法闯进我的心灵空间里来了……话说，你到底为啥这么做？",
+    "Heh, sorry, can't say that I remember terribly well, even here in my mind. Especially with this beaten-up ship sitting here, I’m having to really focus on building up the resolve to move these creaky bones and fix it up.": "哈，抱歉，就算在自己的心灵空间里，我也记不太清了。尤其是看着这艘破船，我得费老大劲才能鼓起勇气，挪动这把老骨头去修它。",
+    "That would be very kind of you Hatchling! If you do that, I’ll try and see what I can remember while you work. You might have some trouble getting to the higher parts of the ship, but I'm sure you'll figure it out.": "你真是太好心了，小家伙！要是你愿意修，我就趁你干活的时候好好回忆回忆。飞船高处的部分可能不太好够，但我相信你肯定有办法。",
+    "Still working on repairs I see? I’ll let you know if I've remembered anything important once you're done. Remember to get the bits on top of the ship too! You'll just need to find some way to clamber up there.": "还在修呢？等你修好我要是想起啥关键的，肯定告诉你。记得把船顶的部件也修了！你得想办法爬上去才行。",
+    "Y'know, can't say I particularly appreciate being climbed on, but you got the job done, Hatchling! And lucky for you, that boot to the head seems to have actually knocked a memory loose!": "虽说被你爬来爬去不怎么舒服吧，但活儿干得漂亮，小家伙！而且算你走运——你刚才那一脚好像把我的记忆给踹出来了！",
+    "Unfortunately, I still don't remember much, but I remember Slate seeming exceedingly giddy a long time ago, well before I ever ended up on the Attelrock. That's all that I can remember, but I hope that it helps!": "可惜我还是记不太全，只记得很久以前——早在我去废岩星之前——斯雷特有过一次特别开心的时候。我就记得这些了，希望能帮到你！",
+    "I was wondering if you would tell me what Slate's favorite memory is.": "我想问问，你能不能告诉我斯雷特最珍贵的回忆是什么。",
+    "What if I fix the ship for you?": "要是我帮你把船修好呢？",
+
+    //riebeck.xml
+    "Riebeck": "瑞拜克",
+    "Oh, hey Hatchling! ...Wait, what are you doing here? Sorry, I don't mean to be rude, but this is my mind so I'm not exactly... expecting... to see anybody else around.": "哦，嘿，小家伙！……等等，你怎么在这儿？抱歉啊，我不是故意没礼貌，但这是我的心灵空间，我真没料到会有别人来。",
+    "Oh, that's neat! I took a look at that when Gabbro brought it back, but wasn't able to make anything of it. I'm glad you figured out what it was for though! ...But why exactly did you use it on me?": "哇，好厉害！加布罗把那东西带回来的时候我看过，但完全没搞懂它的用途。还好你弄明白了！……不过你为什么用这个东西进入我的心灵空间啊？",
+    "Oh! Um, I'm not totally sure, actually. I mean, I think I know what it is but... I'm not sure that's something I should tell you.": "哦！呃，其实我也不是很确定。我是说，我大概知道答案，但……我不确定该不该告诉你。",
+    "Sure, I guess that would be okay. It's also one of my favorite memories, so I'll tell you some of what I remember.": "行吧，应该也没什么。这事也是我最珍贵的回忆之一，那我就跟你说说我记得的部分。",
+    "I remember standing there, listening to what was being said and, well, feeling absolutely sick with worry. But I also felt... excited.": "我记得当时站在那儿，听着台上的话，心里又慌又怕，难受得要命。但同时，我又觉得……特别激动。",
+    "Don't get me wrong, it's not like I never get excited! But this time there was something... different. For the first time I felt those feelings of fear and excitement mix and... excitement won.": "别误会，我不是不会激动！但那次不一样……那是我第一次体会到恐惧和激动交织的感觉，最后……是激动占了上风。",
+    "I was absolutely terrified of the idea of doing this new thing that was being brought up, but... I was even more terrified by the idea of missing out, of sitting by and letting everyone else handle it.": "一想到要去做那件被提出来的新鲜事，我就怕得不行，但……我更怕错过它，怕只能坐在一旁，看着其他人去闯。",
+    "Sorry, I'm a bit emotional thinking back on it. That's probably all that I'm willing to say, I hope it helps!": "抱歉，回忆这些有点上头了。我能说的大概就这些了，希望能帮到你！",
+    "I used a Nomai device from the museum to get in here.": "我用了博物馆里的一件挪麦装置，才进来的。",
+    "I need to know what Slate's favorite memory is.": "我必须知道斯雷特最珍贵的回忆是什么。",
+    "Can you give me a hint?": "能给我点提示吗？",
+
+    //exhibit_plaque.xml
+    "SIGN": "标牌",
+    "In this display is a Nomai device found in the <![CDATA[<color=orange>Hanging City</color>]]> of <![CDATA[<color=orange>Brittle Hollow</color>]]>.": "本展品是一件挪麦装置，出土于碎空星的悬空之城。",
+    "It is not currently understood what this device was used for, but it is hoped that the recording, which was found next to the device, may provide some clues once translated.": "目前尚未明确该装置的用途，但我们希望，与装置一同出土的这份录音在被破译后，能提供些许线索。",
+    "You might also notice that the usual protective case is not present on this exhibit. This is solely to provide access to the recording. Do NOT touch the device!": "你可能也注意到了，这件展品没有像往常一样配备保护罩——此举仅为方便调取录音。禁止触碰该装置！",
+
+    //slateexit.xml
+    "Slate": "斯雷特",
+    "Hey, before you go, I'm sorry for getting mad at you. I thought you were being a silly hatchling and trying to play a prank through massively unethical means and, well, got a bit more than a little annoyed.": "嘿，走之前我得跟你道个歉，抱歉刚才冲你发火。我还以为你这小家伙在胡闹，用这种极不地道的方式搞恶作剧，所以……气得有点过头了。",
+    "I maybe should've guessed it wasn't a prank, since getting past my guard means you figured out what my favorite memory is. I still remember that night so clearly, Feldspar's voice carrying over the crowd, the excited looks on everyone as they were told that we were going to space...": "其实我早该猜到不是恶作剧的——能骗过我的守卫，说明你已经知道我最珍贵的回忆是什么了。那晚的场景我至今记忆犹新：费尔德斯巴的声音穿过人群，所有人听到我们要去太空的消息时，脸上都写满了兴奋……",
+    "Ah, I got caught up reminiscing. Don't let me hold you up any more, we've got business to get to!": "啊，说着说着就陷入回忆了。不耽误你了，我们还有正事要做！",
+
+    //gabbro.xml
+    "Gabbro": "加布罗",
+    "Hey, looks like you found a way into my mind, huh? Hope you're liking it alright, most people don't care for zero-g without a suit.": "嘿，看来你找到进我心灵空间的办法了？希望你还适应——大多数人没穿宇航服都受不了零重力。",
+    "Heh, I hear ya, glad I've got this little spot to hang out on. Now, I assume you didn't come here just for a deeper connection with your time buddy, so was there something that you needed?": "哈，我懂你意思。还好我有这么个小地方能待着。话说，你总不会只是为了和你的“时间伙伴”加深感情才来的吧？是不是有事要我帮忙？",
+    "Woah, bit of a personal question there, don't you think? Plus, I can't even say that I properly know. I think they told me at one point, but I wasn't really paying attention.": "哇，这问题也太私人了吧？而且我其实也不太清楚——他们好像跟我说过，但我当时没怎么听。",
+    "Alright, but only because you're my time buddy. What do I remember… I remember them talking about Feldspar doing something, so I don't think it actually had to do with something Slate did.": "行吧，谁让你是我的时间伙伴呢。让我想想……我记得他们提过，这事和费尔德斯巴的某个举动有关，所以应该不是斯雷特自己做的什么事。",
+    "Good luck with whatever you're doing! Try not to die too horribly!": "祝你好运！别死得太惨就行！",
+    "It wasn't the most fun.": "一点都不好玩。",
+    "I need to know what Slate's favorite memory is.": "我必须知道斯雷特最珍贵的回忆是什么。",
+    "Please, it's important.": "求你了，这事很关键。",
+
+    //exhibit_recording.xml
+    "FILIX: Due to the absence of our traditional educational tools, which were lost alongside the vessel, I have begun developing a device that should allow us to still teach in-depth lessons about discoveries that have been made about our universe.": "菲利克斯：由于我们的传统教学工具随母舰一同遗失，我开始研发一种新装置，以期能继续围绕宇宙探索成果开展深度教学。",
+    "FILIX: The concept is simple, but easier said than done; allow students to access the mindscape of their teacher. This will allow the teacher to present the students with many different phenomena which are currently unreachable given our circumstances.": "菲利克斯：这个装置的理念很简单，但做起来难：让学生能够进入导师的心灵空间。这样一来，导师就能向学生展示诸多受限于现状、无法实地观测的天象。",
+    "FILIX: Unfortunately, development of this device is proving... challenging. It currently does not provide a way out of somebody's mind, except through death in the mindscape or through the teacher creating an exit.": "菲利克斯：遗憾的是，装置的研发过程……困难重重。目前，若想从他人的心灵空间中离开，只有两种方式：要么在心灵空间中死亡，要么由导师主动创造出口。",
+    "FILIX: The second solution is incredibly difficult, and would require the teacher to be very in-touch with their own mind. The first is much easier to accomplish but, according to my calculations, would result in the actual death of the student.": "菲利克斯：第二种方式难度极高，要求导师对自身的心灵空间有极强的掌控力；第一种方式虽易实现，但据我的测算，这会导致学生在现实中死亡。",
+    "FILIX: As such, I would strongly discourage use of this device until further work is done.": "菲利克斯：因此，在完成后续改进前，我强烈建议禁用该装置。"
+  },
+
+  "ShipLogDictionary": {
+    //MindscapeRumors.xml
+    "Nomai Device": "挪麦装置",
+    "New Exhibit": "新展品",
+    "Apparently there's a new exhibit in the observatory.": "据说天文台新增了一件展品。",
+    "The new exhibit in the observatory is a Nomai device that was found on Brittle Hollow.": "天文台的新展品是一件挪麦装置，出土于碎空星。",
+    "Apparently, the device allows a user to go into the mindscape of somebody else.": "据说这件装置能让使用者进入他人的心灵空间。",
+    "Slate's Mind": "斯雷特的心灵空间",
+    "Possible Escape": "可能的逃生方案",
+    "I may be able to use the Nomai device to convince Slate that the Sun is going to go supernova.": "我或许可以借助这件挪麦装置，让斯雷特相信太阳即将发生超新星爆发。",
+    "Slate's mind palace has a guard outside, who refuses to let me pass.": "斯雷特的心灵宫殿外有一名守卫，不肯让我进去。",
+    "Favorite Memory": "最珍贵的回忆",
+    "To get past the guard, I need to know Slate's favorite memory. I may be able to figure out Slate's favorite memory by visiting the minds of the Outer Wilds Ventures astronauts.": "要骗过守卫，我得先知道斯雷特最珍贵的回忆是什么。或许我可以进入星际拓荒探险队其他宇航员的心灵空间，从中找到答案。",
+    "Esker says that Slate's favorite memory probably happened before Esker was on the Attelrock.": "埃斯科说，斯雷特最珍贵的回忆，大概率发生在他前往废岩星之前。",
+    "Riebeck says that Slate's favorite memory probably revolves around an event that got Riebeck very excited, despite their usual nerves.": "瑞拜克说，斯雷特最珍贵的回忆，大概率和某件事有关——即便瑞拜克平时容易紧张，那件事也让他激动不已。",
+    "Gabbro says that the memory probably has to do with something Feldspar did, not something that Slate did.": "加布罗说，这段回忆应该和费尔德斯巴的某个举动有关，而非斯雷特自己的经历。",
+    "Chert says that the memory probably involves a group event.": "切特说，这段回忆大概率和一场集体活动有关。",
+    "Feldspar says that the memory has to do with Outer Wilds Ventures.": "费尔德斯巴说，这段回忆和星际拓荒探险队有关。",
+    "I think I know what Slate's favorite memory is!": "我想我知道斯雷特最珍贵的回忆是什么了！"
+  }
+}
